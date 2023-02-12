@@ -3,9 +3,9 @@ import datetime
 from openpyxl import load_workbook, Workbook
 import os.path
 
-if not os.path.isfile('currency_exchange.xlsx'):
+if not os.path.isfile('data/currency_exchange.xlsx'):
     headers = ['Валюта', 'Курс', 'Единиц', 'Дата']
-    workbook_name = 'currency_exchange.xlsx'
+    workbook_name = 'data/currency_exchange.xlsx'
     wb = Workbook()
     page = wb.active
     page.title = 'Курсы валют'
